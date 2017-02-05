@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Verify a SSN</h1>
+        <p>To check if a person's Social Security Number is valid, please enter it below and click the Search button.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        @using (Html.BeginForm("Index", "Search", FormMethod.Get))
+        {
+            <div class="form-group">
+                <input type="text" name="ssn" id="ssn" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        }
+    </div>
+</div>
+
+
+

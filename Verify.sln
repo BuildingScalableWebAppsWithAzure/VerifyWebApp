@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CBE0A77B-5F2E-46BE-8C83-F90B0B206E1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0205E274-9E23-45EB-8694-E5F01AFDD80A}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Verify.Web", "src\Verify.Web\Verify.Web.xproj", "{FF14C2D9-0810-4836-8813-E7EB22C2686F}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Verify.Database", "Verify.Database\Verify.Database.sqlproj", "{2FA48231-FCEC-4CC1-A828-0AFFAD737199}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF14C2D9-0810-4836-8813-E7EB22C2686F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF14C2D9-0810-4836-8813-E7EB22C2686F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF14C2D9-0810-4836-8813-E7EB22C2686F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF14C2D9-0810-4836-8813-E7EB22C2686F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA48231-FCEC-4CC1-A828-0AFFAD737199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA48231-FCEC-4CC1-A828-0AFFAD737199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA48231-FCEC-4CC1-A828-0AFFAD737199}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2FA48231-FCEC-4CC1-A828-0AFFAD737199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA48231-FCEC-4CC1-A828-0AFFAD737199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA48231-FCEC-4CC1-A828-0AFFAD737199}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF14C2D9-0810-4836-8813-E7EB22C2686F} = {CBE0A77B-5F2E-46BE-8C83-F90B0B206E1F}
+	EndGlobalSection
+EndGlobal

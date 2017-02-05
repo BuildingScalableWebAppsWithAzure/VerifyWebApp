@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Search Results";
+}
+
+@model Verify.Models.Person
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <h1>Search Results</h1>
+
+        @if (Model != null)
+        {
+            <p>We found a person with the requested Social Security Number.</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Results</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>First name</td>
+                        <td>@Model.FirstName</td>
+                    </tr>
+                    <tr>
+                        <td>Middle name</td>
+                        <td>@Model.MiddleName</td>
+                    </tr>
+                    <tr>
+                        <td>Last name</td>
+                        <td>@Model.LastName</td>
+                    </tr>
+                    <tr>
+                        <td>Birthdate</td>
+                        <td>@Model.BirthDate</td>
+                    </tr>
+                    <tr>
+                        <td>Is deceased</td>
+                        <td>@Model.IsDeceased</td>
+                    </tr>
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>We couldn't find any person with the requested Social Security Number</p>
+        }
+        <p>@Html.ActionLink("Click here to search again", "Index", "Home")</p>
+    </div>
+</div>
